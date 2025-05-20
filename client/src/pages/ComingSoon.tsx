@@ -12,7 +12,7 @@ const ComingSoon = () => {
       <Logo />
       <div className="flex flex-col items-center gap-5">
         <motion.div
-          className="text-9xl font-buenard"
+          className="text-6xl font-buenard sm:text-9xl"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: duration }}
@@ -20,7 +20,7 @@ const ComingSoon = () => {
           Coming Soon
         </motion.div>
         <motion.div
-          className="text-3xl text-gray-500"
+          className="text-xl text-gray-500 sm:text-3xl"
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: duration + 0.5 }}
