@@ -1,19 +1,34 @@
 import Logo from "@/components/Logo";
 import { motion } from "motion/react";
 
+const duration: number = 0.3;
+
 const ComingSoon = () => {
   return (
-    <>
+    <div
+      className="min-h-svh flex 
+      flex-col items-center justify-center"
+    >
       <Logo />
-      <motion.div
-        className="flex flex-col items-center 
-      justify-center min-h-svh text-9xl font-buenard"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        Coming Soon
-      </motion.div>
-    </>
+      <div className="flex flex-col items-center gap-5">
+        <motion.div
+          className="text-9xl font-buenard"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: duration }}
+        >
+          Coming Soon
+        </motion.div>
+        <motion.div
+          className="text-3xl text-gray-500"
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: duration + 0.5 }}
+        >
+          Online store in development
+        </motion.div>
+      </div>
+    </div>
   );
 };
 
