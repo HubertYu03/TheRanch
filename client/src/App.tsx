@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Navigate to="/comingSoon" replace />} />
+        <Route path="/" element={<ComingSoon />} />
         <Route path="/comingSoon" element={<ComingSoon />} />
       </Routes>
     </Router>
