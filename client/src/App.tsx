@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import ComingSoon from "./pages/ComingSoon";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ComingSoon />} />
-        <Route path="/comingSoon" element={<ComingSoon />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );

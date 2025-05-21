@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         buenard: ["'Buenard'", "serif"],
+        league: ["'League Spartan'", "serif"],
       },
     },
   },
