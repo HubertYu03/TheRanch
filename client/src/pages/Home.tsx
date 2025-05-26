@@ -2,10 +2,12 @@ import Logo from "@/components/Logo";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <>
       <Logo />
-      <div className="font-buenard">Home Page</div>
-    </div>
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="font-bue nard">Home Page</div>
+      </div>
+    </>
   );
 };
 
